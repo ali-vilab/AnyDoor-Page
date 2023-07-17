@@ -1,11 +1,11 @@
 # AnyDoor
 
-This is the repository that contains source code for AnyDoor.
+This is the repository that contains source code for the webpage of AnyDoor.
 
 If you find AnyDoor useful for your work please cite:
 ```
 @article{chen2023anydoor,
-      title={AnyDoor: Zero-shot Instance-level Image Customization},
+      title={AnyDoor: Zero-shot Object-level Image Customization},
       author={Chen, Xi and Huang, Lianghua and Liu, Yu and Shen, Yujun and Zhao, Deli, and Zhao, Hengshuang},
       journal={arXiv preprint},
       year={2023}

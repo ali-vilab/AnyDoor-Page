@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="AnyDoor">
+  <meta name="keywords" content="Zero-shot, Image Customization">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AnyDoor</title>
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/hku_icon.jpeg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">AnyDoor: Zero-shot Object-level Image Customization</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://xavierchen34.github.io/">Xi Chen</a><sup>1</sup></a>&nbsp</a>&nbsp  
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.ch/citations?hl=en&user=JYVCn3AAAAAJ&view_op=list_works&sortby=pubdate">Lianghua Huang</a><sup>2</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=8zksQb4AAAAJ&view_op=list_works&sortby=pubdate">Yu Liu</a><sup>2</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://shenyujun.github.io/">Yujun Shen</a><sup>3</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?user=7LhjCn0AAAAJ&hl=en">Deli Zhao</a><sup>2</sup></a>&nbsp</a>&nbsp    
+            </span>
+            <span class="author-block">
+              <a href="https://hszhao.github.io/">Hengshuang Zhao</a><sup>1</sup>  
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The University of Hong Kong</a>&nbsp</a>&nbsp  </span>
+            <span class="author-block"><sup>2</sup>Alibaba Group</a>&nbsp</a>&nbsp  </span>
+            <span class="author-block"><sup>3</sup>Ant Grounp</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=   "https://github.com/damo-vilab/AnyDoor"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://github.com/damo-vilab/AnyDoor"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Demo (Soon)</span>
+                </a>
+              </span>
+              <!-- Video Link. -->
+              <span class="link-block">
+                <a href="https://github.com/damo-vilab/AnyDoor"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video (soon)</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/damo-vilab/AnyDoor"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (soon)</span>
+                  </a>
+              </span>
+
+                  </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+
+        <div class="item item-steve">
+          <img src="./generate_images/images/gifs/image1.gif" alt="Steve GIF" width="100%">
+        </div>
+          
+
+        <div class="item item-steve">
+          <img src="./generate_images/images/gifs/image3.gif" alt="Steve GIF" width="100%">
+        </div>    
+
+        <div class="item item-steve">
+          <img src="./generate_images/images/gifs/image4.gif" alt="Steve GIF" width="100%">
+        </div>  
+
+        <div class="item item-steve">
+          <img src="./generate_images/images/gifs/image2.gif" alt="Steve GIF" width="100%">
+        </div>     
+
+        <div class="item item-steve">
+          <img src="./generate_images/images/gifs/image5.gif" alt="Steve GIF" width="100%">
+        </div>    
+        
+        <div class="item item-steve">
+          <img src="./generate_images/images/gifs/image6.gif" alt="Steve GIF" width="100%">
+        </div>    
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This work presents <b>AnyDoor</b>, a diffusion-based image generator with the power to teleport target objects to new scenes at user-specified locations in a harmonious way.
+            Instead of tuning parameters for each object, our model is trained only once and effortlessly generalizes to diverse object-scene combinations at the inference stage.
+            Such a challenging zero-shot setting requires an adequate characterization of a certain object.
+            To this end, we complement the commonly used identity feature with detail features, which are carefully designed to maintain texture details yet allow versatile local variations (<i>e.g.</i>, lighting, orientation, posture, <i>etc.</i>), supporting the object in favorably blending with different surroundings.
+            We further propose to borrow knowledge from video datasets, where we can observe various forms (<i>i.e.</i>, along the time axis) of a single object, leading to stronger model generalizability and robustness.
+            Extensive experiments demonstrate the superiority of our approach over existing alternatives as well as its great potential in real-world applications, such as virtual try-on and object moving.
+          </p>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+
+
+      <div class="column">
+        <div class="content">
+          <h2 class="title is-3" style="text-align: center;">Object Moving</h2>
+          <p>
+            AnyDoor could be applied to fancy tasks like object moving.
+          </p>
+
+          <div class="item item-steve">
+            <img src="./generate_images/images/gifs/image8.gif" alt="Steve GIF" width="100%">
+          </div>    
+        </div>
+      </div>
+      <div class="column">
+        <h2 class="title is-3" style="text-align: center;">Object Swapping</h2>
+        <div class="columns is-centered">
+          <div class="column content">
+            <p>
+              AnyDoor could also be extended to conduct object swapping.
+            </p>
+            <div class="item item-steve">
+              <img src="./generate_images/images/gifs/image7.gif" alt="Steve GIF" width="100%">
+            </div>    
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3" style="text-align: center;">Multi-subject Composition</h2>
+          <div class="content has-text-justified">
+            <p>
+              As AnyDoor is highly controlable for placing the object at specific location of a given scene, it is easy to be extended to multi-subject composition.
+            </p>
+          </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <div class="item item-steve">
+              <img src="./generate_images/images/gifs/image9.gif" alt="Steve GIF" width="100%">
+            </div>   
+          </div>
+        </div>
+
+
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3" style="text-align: center;">Virtual Try-on</h2>
+              <div class="content has-text-justified">
+                <p>
+                  AnyDoor could also serve as a simple but stronge baseline for virtual try-on. It could preserve the colors, patterns, and textures for different clothes without the need for complicated human parsing.
+                </p>
+              </div>
+            <div class="columns is-centered has-text-centered">
+              <div class="column">
+                <div class="item item-steve">
+                  <img src="./generate_images/images/gifs/image10.gif" alt="Steve GIF" width="100%">
+                </div>   
+              </div>
+            </div>
+      
+
+  </div>
+</section>
+
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{chen2023anydoor,
+      title={AnyDoor: Zero-shot Object-level Image Customization},
+      author={Chen, Xi and Huang, Lianghua and Liu, Yu and Shen, Yujun and Zhao, Deli and Zhao, Hengshuang},
+      journal={arXiv preprint},
+      year={2023}
+    }</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://github.com/XavierCHEN34/AnyDoor">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/XavierCHEN34/AnyDoor" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="content">
+        <p>
+          The template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
